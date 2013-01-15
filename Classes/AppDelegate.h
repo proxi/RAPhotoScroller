@@ -47,8 +47,9 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "RAPageViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UIPageViewControllerDataSource>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RAPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

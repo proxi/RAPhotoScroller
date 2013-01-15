@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6535ED16A578DA0068121C /* RAPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6535E116A578DA0068121C /* RAPageViewController.m */; };
+		1E6535EE16A578DA0068121C /* RAPageViewControllerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6535E416A578DA0068121C /* RAPageViewControllerScrollView.m */; };
 		53EB7BB015B76E8B003193F9 /* CuriousFrog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53EB793E15B76E8A003193F9 /* CuriousFrog.jpg */; };
 		53EB7BB115B76E8B003193F9 /* LeggyFrog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53EB793F15B76E8A003193F9 /* LeggyFrog.jpg */; };
 		53EB7BB215B76E8B003193F9 /* PeeringFrog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53EB794015B76E8A003193F9 /* PeeringFrog.jpg */; };
@@ -645,6 +647,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E6535D016A578DA0068121C /* RADeferredOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADeferredOperation.h; sourceTree = "<group>"; };
+		1E6535E016A578DA0068121C /* RAPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPageViewController.h; sourceTree = "<group>"; };
+		1E6535E116A578DA0068121C /* RAPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAPageViewController.m; sourceTree = "<group>"; };
+		1E6535E216A578DA0068121C /* RAPageViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPageViewControllerDelegate.h; sourceTree = "<group>"; };
+		1E6535E316A578DA0068121C /* RAPageViewControllerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPageViewControllerScrollView.h; sourceTree = "<group>"; };
+		1E6535E416A578DA0068121C /* RAPageViewControllerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAPageViewControllerScrollView.m; sourceTree = "<group>"; };
+		1E6535E516A578DA0068121C /* RAPageViewControllerScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPageViewControllerScrollViewDelegate.h; sourceTree = "<group>"; };
+		1E6535E616A578DA0068121C /* RAPageViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPageViewControllerSubclass.h; sourceTree = "<group>"; };
 		28B8D5E015818A5B00386DDB /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		53EB793215B76B07003193F9 /* PhotoScroller_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoScroller_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		53EB793315B76B07003193F9 /* PhotoScroller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoScroller-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -1930,6 +1940,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E6535CF16A578DA0068121C /* RAPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E6535D016A578DA0068121C /* RADeferredOperation.h */,
+				1E6535E016A578DA0068121C /* RAPageViewController.h */,
+				1E6535E116A578DA0068121C /* RAPageViewController.m */,
+				1E6535E216A578DA0068121C /* RAPageViewControllerDelegate.h */,
+				1E6535E316A578DA0068121C /* RAPageViewControllerScrollView.h */,
+				1E6535E416A578DA0068121C /* RAPageViewControllerScrollView.m */,
+				1E6535E516A578DA0068121C /* RAPageViewControllerScrollViewDelegate.h */,
+				1E6535E616A578DA0068121C /* RAPageViewControllerSubclass.h */,
+			);
+			name = RAPageViewController;
+			path = RAPageViewController/RAPageViewController;
+			sourceTree = "<group>";
+		};
 		53EB793D15B76E8A003193F9 /* Full Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -3226,6 +3252,7 @@
 		C9CD3140157E63950099CB16 = {
 			isa = PBXGroup;
 			children = (
+				1E6535CF16A578DA0068121C /* RAPageViewController */,
 				28B8D5E015818A5B00386DDB /* ReadMe.txt */,
 				C9CD3155157E63950099CB16 /* PhotoScroller */,
 				C9CD316C157E64310099CB16 /* Resources */,
@@ -3990,6 +4017,8 @@
 				53EB7E3D15B771F3003193F9 /* PhotoViewController.m in Sources */,
 				53EB7E3E15B771F5003193F9 /* ImageScrollView.m in Sources */,
 				53EB7E3F15B771F8003193F9 /* TilingView.m in Sources */,
+				1E6535ED16A578DA0068121C /* RAPageViewController.m in Sources */,
+				1E6535EE16A578DA0068121C /* RAPageViewControllerScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4014,7 +4043,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Janusz Gregorczyk (JYVUFA37NC)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -4034,7 +4063,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E7AD7AD4-6E00-4B92-B782-04A0EB23F507";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
@@ -4060,7 +4089,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
@@ -4074,6 +4102,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhotoScroller_Prefix.pch;
 				INFOPLIST_FILE = "PhotoScroller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = PhotoScroll;
 				WRAPPER_EXTENSION = app;
 			};
@@ -4085,6 +4114,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhotoScroller_Prefix.pch;
 				INFOPLIST_FILE = "PhotoScroller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = PhotoScroll;
 				WRAPPER_EXTENSION = app;
 			};

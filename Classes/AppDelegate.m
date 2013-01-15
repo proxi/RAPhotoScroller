@@ -57,13 +57,16 @@
     PhotoViewController *pageZero = [PhotoViewController photoViewControllerForPageIndex:0];
     
     // assign the first page to the pageViewController (our rootViewController)
-    UIPageViewController *pageViewController = (UIPageViewController *)self.window.rootViewController;
-    pageViewController.dataSource = self;
+    RAPageViewController *pageViewController = (RAPageViewController *)self.window.rootViewController;
+    pageViewController.delegate = self;
+//    pageViewController.dataSource = self;
+
+    [pageViewController view];
     
-    [pageViewController setViewControllers:@[pageZero]
-                                  direction:UIPageViewControllerNavigationDirectionForward
-                                   animated:NO
-                                 completion:NULL];
+    [pageViewController setViewControllers:@[pageZero]];
+//                                  direction:UIPageViewControllerNavigationDirectionForward
+//                                   animated:NO
+//                                 completion:NULL];
     
     return YES;
 }
