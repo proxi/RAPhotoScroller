@@ -94,4 +94,17 @@
     return UIInterfaceOrientationMaskAll;
 }
 
+- (void)didMoveToParentViewController:(UIViewController *)parent
+{
+    [super didMoveToParentViewController:parent];
+    
+    if (parent) {
+        NSLog(@"add: %@", self);
+    } else {
+        NSLog(@"remove: %@", self);
+    }
+
+    NSLog(@"children: %@", parent.childViewControllers);
+}
+
 @end
